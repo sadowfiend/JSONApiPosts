@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: grey;
+    font-family: sans-serif;
+    margin: 0;
+}
+.todo{
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px rgba(0,0,0, .5) ;
+    background: #f5f5f5;
+    margin: 4px;
+}
+.todo__title{
+    color: #212121;
+    font-size: 20px;
+}
+.todo__status{
+    color: red;
+    font-size: 14px;
+    text-align: right;
+}
+.todo-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.todo__status--completed{
+    color: green;
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: rgba(0,0,0, .8);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.modal__content{
+    width: 300px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
